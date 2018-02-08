@@ -12,6 +12,7 @@
 		EC668A8C1D11B9E1003C0D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC668A8A1D11B9E1003C0D26 /* Main.storyboard */; };
 		EC668A8E1D11B9E1003C0D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC668A8D1D11B9E1003C0D26 /* Assets.xcassets */; };
 		EC668A911D11B9E1003C0D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC668A8F1D11B9E1003C0D26 /* LaunchScreen.storyboard */; };
+		EC668A991D11BAA1003C0D26 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC668A981D11BAA1003C0D26 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EC668A8D1D11B9E1003C0D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC668A901D11B9E1003C0D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC668A921D11B9E1003C0D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC668A981D11BAA1003C0D26 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC668A991D11BAA1003C0D26 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		EC668A7A1D11B9E0003C0D26 = {
 			isa = PBXGroup;
 			children = (
+				EC668A981D11BAA1003C0D26 /* MultipeerConnectivity.framework */,
 				EC668A851D11B9E1003C0D26 /* PeertoPeer */,
 				EC668A841D11B9E0003C0D26 /* Products */,
 			);
@@ -96,6 +100,8 @@
 				TargetAttributes = {
 					EC668A821D11B9E0003C0D26 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 56YNPS2GNF;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -180,6 +186,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -226,6 +233,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -251,10 +259,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 56YNPS2GNF;
 				INFOPLIST_FILE = PeertoPeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mp.debug.DrawMap.PeertoPeer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openlane.mobile.peer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -262,10 +275,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 56YNPS2GNF;
 				INFOPLIST_FILE = PeertoPeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mp.debug.DrawMap.PeertoPeer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openlane.mobile.peer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -288,6 +306,7 @@
 				EC668A971D11B9E1003C0D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
