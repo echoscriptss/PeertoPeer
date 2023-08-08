@@ -1,12 +1,10 @@
 workflows:
   my-workflow:
     instance_type: mac_pro
-   
-  ios-version:
+ 
     environment:
       xcode: 14.1
-  test-case:
-     scripts:
+    scripts:
       - name: Run iOS tests
         script: |
           set -e # exit on first failed command
@@ -16,8 +14,8 @@ workflows:
               --scheme ${XCODE_SCHEME?} \
               --device "iPhone 12"
         test_report: build/ios/test/*.xml
-  creating-build:
-    scripts:
+        
+    
       - name: Add provisioning profiles
         script: |
           set -e # exit on first failed command
