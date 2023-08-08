@@ -1,6 +1,9 @@
 workflows:
-  my-workflow:
-    instance_type: mac_pro
+ my-workflow:
+    working_directory: mobile
+    scripts:
+      - name: Build iOS
+        working_directory: mobile/ios
  
     environment:
       xcode: 14.1
